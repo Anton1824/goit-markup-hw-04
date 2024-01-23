@@ -42,6 +42,7 @@ p {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -71,6 +72,48 @@ p {
   gap: 40px;
   
 }
+.header-list-current {
+  display: flex;
+  align-items: center;
+  color: #404BBF;
+  position: relative;
+  /* padding: 24px 0; */
+}
+.header-list-current ::after {
+  content: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .header-link-current::before { */
+  /* display: flex; */
+  /* color: #404BBF;
+  content: none;
+  position: relative; */
+  /* font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block; */
+
+  /* width: 48px;
+  height: 4px;
+  border-radius: 2px;
+} */
+/* .header-link-current::after {
+  content: none;
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  background: #404BBF;
+} */
+
 
 .header-list .header-link {
   color: #2e2f42;
@@ -81,8 +124,8 @@ p {
   padding: 24px 0;
   display: block;
 }
-.header-list :hover 
-.header-list :focus {
+.header-list .header-link:hover 
+.header-list .header-link:focus {
   color: #404bbf;
 }
 
@@ -124,9 +167,14 @@ p {
 /* section2 solution */
 
 .solutions {
-  background-image: url("../images/people-office.jpg");
-  background: rgba(46, 47, 66, 0.7);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office.jpg");
+  /* background: rgba(46, 47, 66, 0.7); */
   /* background-color: #2e2f42; */
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  
   padding: 188px 0;
   text-align: center;
 }
@@ -153,7 +201,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.64px;
   
-
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
@@ -164,6 +211,7 @@ p {
   
   border-radius: 4px;
   background-color: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
