@@ -105,7 +105,8 @@ p {
   padding: 24px 0;
   display: block;
 }
-.header-list .header-link:hover .header-list .header-link:focus {
+.header-list .header-link:hover 
+.header-list .header-link:focus {
   color: #404bbf;
 }
 
