@@ -434,7 +434,7 @@ p {
   padding: 100px 0;
 }
 
-.footer-container-main .container {
+.footer-container-main {
   display: flex;
   align-items: baseline;
   
